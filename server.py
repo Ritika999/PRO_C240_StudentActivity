@@ -24,13 +24,7 @@ def setup():
     global SERVER
 
 
-    SERVER  = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    SERVER.bind((IP_ADDRESS, PORT))
-    SERVER.listen(100)
-
-    print("\t\t\t\tSERVER IS WAITING FOR INCOMMING CONNECTIONS...")
-    print("\n")
-
+    
     acceptConnections()
 
 
